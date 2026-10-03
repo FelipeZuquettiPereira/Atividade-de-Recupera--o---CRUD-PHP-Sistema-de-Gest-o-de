@@ -40,12 +40,12 @@ $result = mysqli_query($conexao, "SELECT * FROM brinquedo");
                             <td><?php echo htmlspecialchars($brinquedo["id"]); ?></td>
                             <td><?php echo htmlspecialchars($brinquedo["nome"]); ?></td>
                             <td><?php echo htmlspecialchars($brinquedo["categoria"]); ?></td>
-                            <td><?php echo htmlspecialchars($brinquedo["idade_minima"]); ?> anos</td>
+                            <td><?php echo htmlspecialchars($brinquedo["idade_minima"]); ?></td>
                             <td>R$ <?php echo number_format($brinquedo["preco"], 2, ',', '.'); ?></td>
                             <td><?php echo htmlspecialchars($brinquedo["quantidade_estoque"]); ?></td>
                             <td>
-                                <a href="public/editar.php?id=<?php echo $brinquedo["id"]; ?>">Editar</a>
-                                <a href="public/excluir.php?id=<?php echo $brinquedo["id"]; ?>">Excluir</a>
+                                <a href="editar.php?id=<?php echo $brinquedo["id"]; ?>">Editar</a>
+                                <a href="excluir.php?id=<?php echo $brinquedo["id"]; ?>">Excluir</a>
                             </td>
                         </tr>
                     <?php } ?>
