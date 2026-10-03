@@ -8,7 +8,7 @@ $idade_minima = $_POST["idade_minima"];
 $preco = $_POST["preco"];
 $quantidade_estoque - $_POST["quantidade_estoque"];
 
-$sql = "INSERT INTO livros (nome, categoria, idade_minima, preco, quantidade_estoque) VALUES (?, ?, ?, ?, ?)";
+$sql = "INSERT INTO brinquedo (nome, categoria, idade_minima, preco, quantidade_estoque) VALUES (?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conexao, $sql);
 
 if ($stmt) {
