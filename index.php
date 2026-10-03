@@ -48,11 +48,11 @@ $result = mysqli_query($conexao, "SELECT * FROM brinquedo");
             <br>
 
             <label for="preco">Preço:</label>
-            <input type="number" id="preco" name="preco" step="0.01" min="0" required>
+            <input type="number" id="preco" name="preco" required>
             <br>
 
             <label for="quantidade_estoque">Quantidade no Estoque:</label>
-            <input type="number" id="quantidade_estoque" name="quantidade_estoque" min="0" required>
+            <input type="number" id="quantidade_estoque" name="quantidade_estoque" required>
             <br>
 
             <button type="submit">Cadastrar</button>
